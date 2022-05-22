@@ -1,5 +1,5 @@
 let vSuma: number[] = new Array(6);
-let indice: number = 0;
+let i: number = 0;
 let v1: number[] = new Array(6);
 v1[0] = 1;
 v1[1] = 3;
@@ -16,16 +16,10 @@ v2[3] = 5;
 v2[4] = 9;
 v2[5] = 4;
 
-while (indice < 6) {
-  vSuma[indice] = v1[indice] + v2[indice];
+while (i < 6) {
+  vSuma[i] = v1[i] + v2[i];
   console.log(
-    "v1[" +
-      v1[indice] +
-      "] + V2[" +
-      v2[indice] +
-      "] = vSuma[" +
-      vSuma[indice] +
-      "]"
+    "v1[" + v1[i] + "] + V2[" + v2[i] + "] = vSuma[" + vSuma[i] + "]"
   );
-  indice++;
+  i++;
 }
