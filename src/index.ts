@@ -1,20 +1,20 @@
 let vSuma: number[] = new Array(6);
 let i: number = 0;
 let v1: number[] = new Array(6);
-v1[0] = 1;
-v1[1] = 3;
-v1[2] = 7;
-v1[3] = 9;
-v1[4] = 9;
-v1[5] = 5;
-
 let v2: number[] = new Array(6);
-v2[0] = 6;
-v2[1] = 9;
-v2[2] = 2;
-v2[3] = 5;
-v2[4] = 9;
-v2[5] = 4;
+
+//pido los valores del primer arreglo
+for (let cantidad = 0; cantidad < 6; cantidad++) {
+  v1[cantidad] = Number(
+    prompt("Primer arreglo: Ingrese el valor de la posicion " + (cantidad + 1))
+  );
+}
+//pido los valores del segundo arreglo
+for (let cantidad = 0; cantidad < 6; cantidad++) {
+  v2[cantidad] = Number(
+    prompt("Segundo arreglo: Ingrese el valor de la posicion " + (cantidad + 1))
+  );
+}
 
 while (i < 6) {
   vSuma[i] = v1[i] + v2[i];
